@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f6f8;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  border-right: 1px solid #ddd;
+  background: #fff;
+  padding: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar button.active {
+  font-weight: 700;
+}
+
+.chat-main {
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.tool-selector,
+.tool-calls,
+.messages,
+.composer {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+.messages {
+  overflow: auto;
+  min-height: 40vh;
+}
+
+.bubble {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.bubble.user {
+  background: #e9f0ff;
+}
+
+.bubble.assistant {
+  background: #eef8ef;
+}
+
+.thinking {
+  color: #7a4f00;
+  white-space: pre-wrap;
+}
+
+pre {
+  margin: 0.25rem 0;
+  white-space: pre-wrap;
+}
+
+.composer textarea {
+  width: 100%;
+  min-height: 90px;
+  margin-bottom: 0.5rem;
+}
+
+.tool-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tool-row small {
+  display: block;
+  color: #666;
+}
