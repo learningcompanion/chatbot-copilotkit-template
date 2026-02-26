@@ -1,0 +1,17 @@
+[project]
+name = "pydanticai-copilotkit-backend"
+version = "0.1.0"
+description = "Student-friendly backend template using PydanticAI + FastAPI"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.111.0",
+  "uvicorn[standard]>=0.30.0",
+  "pydantic-ai>=0.0.14",
+  "python-dotenv>=1.0.1",
+]
+
+[tool.uv]
+dev-dependencies = [
+  "ruff>=0.5.0",
+]
